@@ -7,3 +7,22 @@
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display:block;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Chelsea Market', cursive;
+	padding: 1% 1% .2% 1%;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1rem;
+}
+
+p {
+	padding: 1%;
+}
