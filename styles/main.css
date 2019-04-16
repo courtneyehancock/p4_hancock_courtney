@@ -26,49 +26,90 @@ body {
 p {
 	padding: 1%;
 }
-/* To Navigation Style */
-.codrops-top {
+
+h1 {
+	text-align: center;
+	font-size: 5em;
+	color: #565656;
+}
+
+img {
 	width: 100%;
-	text-transform: uppercase;
-	font-size: 0.69em;
-	line-height: 2.2;
 }
 
-.codrops-top a {
-	display: inline-block;
-	padding: 0 1em;
-	text-decoration: none;
-	letter-spacing: 1px;
+.my-story,
+.my-breed {
+	/*aircraft white*/
+	background-color: #edf2f8;
+	opacity: .7;
+	margin: 2%;
 }
 
-.codrops-top span.right {
-	float: right;
+/* ******NAVIGATION *******/
+.indigo {
+  background: #ccccff;
 }
 
-.codrops-top span.right a {
-	display: block;
-	float: left;
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+
+div.container {
+  margin: 0 auto;
+	padding: .5em 1em 2em 1em;
+	text-align: center;
 }
 
-.codrops-icon:before {
-	margin: 0 4px;
-	text-transform: none;
-	font-weight: normal;
-	font-style: normal;
-	font-variant: normal;
-	font-family: 'codropsicons';
-	line-height: 1;
-	speak: none;
-	-webkit-font-smoothing: antialiased;
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+div.topLeftBorders a:before
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 2px;
+    height: 0px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
 }
 
-.codrops-icon-drop:before {
-	content: "\e001";
+div.topLeftBorders a:after
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
 }
 
-.codrops-icon-prev:before {
-	content: "\e004";
+div.topLeftBorders a:hover:before
+{
+    height: 100%;
 }
+
+div.topLeftBorders a:hover:after
+{
+    opacity: 0;
+    top: 100%;
+}
+
+
+/* *******END NAV *********/
+
 
 
 /* Related demos */
@@ -101,16 +142,12 @@ p {
 
 .related a h3 {
 	margin: 0;
-	padding: 0.5em 0 0.3em;
+	padding: 0.2em 0 0.3em;
 	max-width: 300px;
 	text-align: left;
 }
 
 @media screen and (max-width: 25em) {
-
-	.codrops-header {
-		font-size: 75%;
-	}
 
 	.codrops-icon span {
 		display: none;
@@ -184,7 +221,6 @@ p {
 
 .grid figure h2 {
 	word-spacing: -0.15em;
-
 	font-weight: 300;
 }
 
@@ -206,7 +242,7 @@ p {
 /*---------------*/
 
 figure.effect-sarah {
-	background: #42b078;
+	background: #ffcccc;
 }
 
 figure.effect-sarah img {
@@ -221,7 +257,7 @@ figure.effect-sarah img {
 }
 
 figure.effect-sarah:hover img {
-	opacity: 0.4;
+	opacity: 0.5;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
@@ -240,7 +276,7 @@ figure.effect-sarah h2::after {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	width: 100%;
+	width: 80%;
 	height: 3px;
 	background: #fff;
 	content: '';
@@ -270,67 +306,12 @@ figure.effect-sarah:hover p {
 	transform: translate3d(0,0,0);
 }
 /* *****END SARAH EFFECT ******/
-/*---------------*/
-/***** Roxy *****/
-/*---------------*/
 
-figure.effect-roxy {
-	background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
-	background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
+.logo {
+	width: 100%;
+	max-width: 125px;
 }
 
-figure.effect-roxy img {
-	width: -webkit-calc(100% + 60px);
-	width: calc(100% + 60px);
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-50px,0,0);
-	transform: translate3d(-50px,0,0);
-}
+@media (min-width: 1200px) {
 
-figure.effect-roxy figcaption::before {
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	bottom: 30px;
-	left: 30px;
-	border: 1px solid #fff;
-	content: '';
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-20px,0,0);
-	transform: translate3d(-20px,0,0);
 }
-
-figure.effect-roxy figcaption {
-	padding: 3em;
-	text-align: left;
-}
-
-figure.effect-roxy h2 {
-	padding: 30% 0 10px 0;
-}
-
-figure.effect-roxy p {
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-10px,0,0);
-	transform: translate3d(-10px,0,0);
-}
-
-figure.effect-roxy:hover img {
-	opacity: 0.7;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-
-figure.effect-roxy:hover figcaption::before,
-figure.effect-roxy:hover p {
-	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-
-/** END EFFECT ROXY *****/
