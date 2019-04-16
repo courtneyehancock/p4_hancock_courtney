@@ -38,11 +38,17 @@ img {
 }
 
 .my-story,
-.my-breed {
+.my-breed,
+.my-life {
 	/*aircraft white*/
 	background-color: #edf2f8;
 	opacity: .7;
 	margin: 2%;
+}
+
+aside h3{
+	text-align: center;
+	padding: 1%;
 }
 
 /* ******NAVIGATION *******/
@@ -316,4 +322,19 @@ figure.effect-sarah:hover p {
 
 @media (min-width: 1200px) {
 
+}
+
+#instafeed {
+  max-width:900px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+a {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  background: white;
 }
