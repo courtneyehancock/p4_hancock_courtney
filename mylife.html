@@ -24,14 +24,28 @@
 	</head>
 
 	<body>
+		<button class="hamburger">&#9776;</button>
+    <button class="cross">&#735;</button>
+
 		<header>
-			<div class="container indigo topLeftBorders">
-				<p><img class= "logo" src="images/charlie-logo.png"></p>
-				<a href="index.html">HOME</a>
-				<a href="mystory.html">MY STORY</a>
-				<a href="mybreed.html">MY BREED</a>
-				<a href="mylife.html">MY LIFE</a>
-			</div>
+			<nav class="menu">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="mystory.html">MY STORY</a></li>
+					<li><a href="mybreed.html">MY BREED</a></li>
+					<li><a href="mylife.html">MY LIFE</a></li>
+				</ul>
+			</nav>
+
+			<nav class="desktop">
+				<div class="container indigo topLeftBorders">
+					<p><img class= "logo" src="images/charlie-logo.png"></p>
+					<a href="index.html">HOME</a>
+					<a href="mystory.html">MY STORY</a>
+					<a href="mybreed.html">MY BREED</a>
+					<a href="mylife.html">MY LIFE</a>
+				</div>
+			</nav>
 		</header>
 
 		<div class="my-life">
@@ -43,6 +57,7 @@
 			<div id="instafeed"></div>
 		</aside>
 
+	<script src="scripts/hamburger.js"></script>
 	<script src="scripts/instafeed.js"></script>
 	<script src="scripts/main.js"></script>
 	</body>

@@ -16,6 +16,7 @@ h5,
 h6 {
 	font-family: 'Chelsea Market', cursive;
 	padding: 1% 1% .2% 1%;
+	margin-top: 2%;
 }
 
 body {
@@ -50,73 +51,76 @@ aside h3{
 	text-align: center;
 	padding: 1%;
 }
-
-/* ******NAVIGATION *******/
-.indigo {
-  background: #ccccff;
+/* Hamburger Menu =========================*/
+body{
+  font-family: 'Quicksand', sans-serif;
+	margin:0;
+	width:100%;
+	height:100vh;
+  	background:#ffffff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
-
-@import 'https://fonts.googleapis.com/css?family=Raleway';
-
-
-div.container {
-  margin: 0 auto;
-	padding: .5em 1em 2em 1em;
-	text-align: center;
+header{
+	width:100%;
+  background: #f2f2f3;
+	height:60px;
+	line-height:60px;
+	border-bottom:1px solid #dddddd;
 }
-
-div.container a
-{
-    color: #FFF;
-    text-decoration: none;
-    font: 20px Raleway;
-    margin: 0px 10px;
-    padding: 10px 10px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
 }
-div.topLeftBorders a:before
-{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 2px;
-    height: 0px;
-    background: #FFF;
-    content: "";
-    opacity: 1;
-    transition: all 0.3s;
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
 }
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
 
-div.topLeftBorders a:after
-{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #FFF;
-    content: "";
-    opacity: 1;
-    transition: all 0.3s;
+/*.glyphicon-home{
+  color:white;
+  font-size:1.5em;
+  margin-top:5px;
+  margin:0 auto;
+}*/
+header{display:inline-block; font-size:12px;}
+span{padding-left:20px;}
+a{color:#336699;}
+/* END HAMBURGER =====================*/
+
+.desktop {
+	display: none;
 }
-
-div.topLeftBorders a:hover:before
-{
-    height: 100%;
-}
-
-div.topLeftBorders a:hover:after
-{
-    opacity: 0;
-    top: 100%;
-}
-
-
-/* *******END NAV *********/
-
-
 
 /* Related demos */
 .related {
@@ -320,9 +324,76 @@ figure.effect-sarah:hover p {
 	max-width: 125px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 550px) {
+	/* ******NAVIGATION *******/
+	.menu, .hamburger, .cross {
+		display: none;
+	}
 
-}
+	.desktop {
+		display: inline;
+	}
+	.indigo {
+	  background: #ccccff;
+	}
+
+	@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+
+	div.container {
+	  margin: 0 auto;
+		padding: .5em 1em 2em 1em;
+		text-align: center;
+	}
+
+	div.container a
+	{
+	    color: #FFF;
+	    text-decoration: none;
+	    font: 20px Raleway;
+	    margin: 0px 10px;
+	    padding: 10px 10px;
+	    position: relative;
+	    z-index: 0;
+	    cursor: pointer;
+	}
+	div.topLeftBorders a:before
+	{
+	    position: absolute;
+	    top: 0px;
+	    left: 0px;
+	    width: 2px;
+	    height: 0px;
+	    background: #FFF;
+	    content: "";
+	    opacity: 1;
+	    transition: all 0.3s;
+	}
+
+	div.topLeftBorders a:after
+	{
+	    position: absolute;
+	    top: 0px;
+	    left: 0px;
+	    width: 100%;
+	    height: 2px;
+	    background: #FFF;
+	    content: "";
+	    opacity: 1;
+	    transition: all 0.3s;
+	}
+
+	div.topLeftBorders a:hover:before
+	{
+	    height: 100%;
+	}
+
+	div.topLeftBorders a:hover:after
+	{
+	    opacity: 0;
+	    top: 100%;
+	}
+	/* *******END NAV *********/
 
 #instafeed {
   max-width:900px;
@@ -331,10 +402,10 @@ figure.effect-sarah:hover p {
   display: flex;
   flex-wrap: wrap;
 
-a {
+	a {
   display: flex;
   align-items: center;
   position: relative;
   width: 50%;
   background: white;
-}
+	}

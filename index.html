@@ -17,55 +17,74 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<!--SCRIPTS-->
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
 		<!--[if lt IE 9]>
 			<script src="js/html5shiv-printshiv.min.js"></script>
 		<![endif]-->
 
 	</head>
 	<body>
+
+		<button class="hamburger">&#9776;</button>
+    <button class="cross">&#735;</button>
+
 		<header>
-			<div class="container indigo topLeftBorders">
-				<p><img class= "logo" src="images/charlie-logo.png"></p>
-				<a href="index.html">HOME</a>
-				<a href="mystory.html">MY STORY</a>
-				<a href="mybreed.html">MY BREED</a>
-				<a href="mylife.html">MY LIFE</a>
-			</div>
+			<nav class="menu">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="mystory.html">MY STORY</a></li>
+					<li><a href="mybreed.html">MY BREED</a></li>
+					<li><a href="mylife.html">MY LIFE</a></li>
+				</ul>
+			</nav>
+
+			<nav class="desktop">
+				<div class="container indigo topLeftBorders">
+					<p><img class= "logo" src="images/charlie-logo.png"></p>
+					<a href="index.html">HOME</a>
+					<a href="mystory.html">MY STORY</a>
+					<a href="mybreed.html">MY BREED</a>
+					<a href="mylife.html">MY LIFE</a>
+				</div>
+			</nav>
 		</header>
 
 		<h1>- Charlie -</h1>
 
-		<div class="container">
+		<div class="container1">
 			<div class="grid">
 
 				<figure class="effect-sarah">
 					<img src="images/og-charlie.jpeg" alt="Original Charlie Photo"/>
 					<figcaption>
-						<h2>My <span>Story</span></h2>
+						<h2>My<span>Story</span></h2>
 						<p>Swept off my paws</p>
-						<a href="#">View more</a>
+						<a href="mystory.html">View more</a>
 					</figcaption>
 				</figure>
+
 				<figure class="effect-sarah">
 					<img src="images/nosey.jpeg" alt="Charlie in a sweatshirt"/>
 					<figcaption>
-						<h2>My <span>Breed</span></h2>
+						<h2>My<span>Breed</span></h2>
 						<p>American Staffordshire Terrier</p>
-						<a href="#">View more</a>
+						<a href="mybreed.html">View more</a>
 					</figcaption>
 				</figure>
+
 				<figure class="effect-sarah">
 					<img src="images/smiley.jpg" alt="img13"/>
 					<figcaption>
-						<h2>My <span>Life</span></h2>
+						<h2>My<span>Life</span></h2>
 						<p>Diehard Gators Fan. Pro Snuggler.</p>
-						<a href="#">View more</a>
+						<a href="mylife.html">View more</a>
 					</figcaption>
 				</figure>
 
 			</div>
 		</div><!-- /container -->
-
+	<script src="scripts/hamburger.js"></script>
 	<script src="scripts/main.js"></script>
 	</body>
 
