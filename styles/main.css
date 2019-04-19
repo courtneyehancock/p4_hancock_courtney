@@ -15,7 +15,8 @@ h4,
 h5,
 h6 {
 	font-family: 'Chelsea Market', cursive;
-	padding: 10% 1% .2% 1%;
+	padding: 10% 1% .5% 1%;
+	color: 565656;
 }
 
 body {
@@ -33,11 +34,31 @@ h1 {
 	color: #565656;
 }
 
+h4 {
+	text-align: center;
+	color: #565656;
+}
+
 img {
 	width: 100%;
 }
 
+.charlie-pix {
+	max-width: 400px;
+	max-height: 500px;
+}
+
+.my-story {
+	display: flex;
+	justify-content: center
+}
+
+.my-story-1 {
+	display: flex;
+	flex-direction: row-reverse;
+}
 .my-story,
+.my-story-1,
 .my-breed,
 .my-life {
 	/*aircraft white*/
@@ -156,13 +177,13 @@ a{color:#336699;}
 	text-align: left;
 }
 
-@media screen and (max-width: 25em) {
+/*@media screen and (max-width: 25em) {
 
 	.codrops-icon span {
 		display: none;
 	}
 
-}
+}*/
 
 .grid {
 	overflow: hidden;
@@ -178,10 +199,11 @@ a{color:#336699;}
 .grid figure {
 	position: relative;
 	z-index: 1;
-	display: inline-block;
+	/*display: inline-block;*/
 	overflow: hidden;
 	margin: -0.135em;
-	width: 33.333%;
+	max-width: 400px;
+	/*width: 33.333%;*/
 	height: 400px;
 	background: #3085a3;
 	text-align: center;
@@ -393,6 +415,12 @@ figure.effect-sarah:hover p {
 	    top: 100%;
 	}
 	/* *******END NAV *********/
+
+@media (min-width: 900px) {
+	.grid figure {
+		display: inline-block;
+		width: 33.333%;
+}
 
 #instafeed {
   max-width:900px;
