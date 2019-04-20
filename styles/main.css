@@ -15,7 +15,6 @@ h4,
 h5,
 h6 {
 	font-family: 'Chelsea Market', cursive;
-	color: 565656;
 }
 
 body {
@@ -46,6 +45,9 @@ h4 {
 	color: #565656;
 }
 
+h3 {
+	color: #565656;
+}
 img {
 	width: 100%;
 }
@@ -87,7 +89,16 @@ aside h3{
 	padding: 2%;
 }
 
-.highlights p{
+.highlights-1 {
+	background-color: #ffcccc;
+	opacity: .5;
+	margin: 2% auto;
+	padding: 2%;
+	width: 70%;
+}
+
+.highlights p,
+.hightlights-1 p {
 	padding: 2% 0;
 }
 
@@ -104,6 +115,37 @@ aside h3{
 .images {
 	display: none;
 }
+#external_link {
+  background: #ccccff;
+  padding: 2%;
+  margin: 2% auto;
+  text-align: center;
+	max-width: 200px;
+}
+
+#external_link a {
+  text-decoration: none;
+  color: #565656;
+}
+
+.charlie-insta {
+	background-color: #ccccff;
+	opacity: .7;
+}
+/*----typewriter-----------*/
+.typewrite {
+  text-align: center;
+  color:#565656;
+  /*padding-top:10em;*/
+	margin-top: 50%;
+	text-decoration: none;
+}
+
+.typewrite a {
+	color: #565656;
+	text-decoration: none;
+}
+/*end typewriter-------------*/
 /* =========bouncing ball==========*/
 .ball {
   width: 100px;
@@ -502,6 +544,14 @@ figure.effect-sarah:hover p {
 		display: inline-block;
 		width: 40%;
 	}
+
+	.collection {
+		display: flex;
+	}
+
+	.highlights-1 {
+		width: 50%;
+	}
 }
 @media (min-width: 900px) {
 	.grid figure {
@@ -524,10 +574,11 @@ figure.effect-sarah:hover p {
 	.video {
 		display: flex;
 		justify-content: center;
-		width: 100%;
-		max-width: 1200px;
+		width: 60%;
+		max-width: 1000px;
 		height: 100%;
 		max-height: 640px;
+		margin: 0 auto;
 	}
 
 	.images {
